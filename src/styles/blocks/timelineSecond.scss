@@ -1,0 +1,60 @@
+.timeline-second {
+	&__title {
+		position: absolute;
+		width: 100%;
+		top: -125%;
+		left: 0;
+		text-align: center;
+
+		@media all and (max-width:$md2 + px) {
+			top: 50%;
+			left: 25%;
+			width: 20%;
+			transform: translate(0, -50%);
+			text-align: right;
+		}
+
+		&._process {
+			color: $orange;
+		}
+
+		&._done {
+			color: $green;
+		}
+
+		&._coming {
+			color: $grey;
+		}
+	}
+
+	&__title-fourth {
+		position: absolute;
+		width: 100%;
+		top: 125%;
+		left: 0;
+		text-align: center;
+
+		@media all and (max-width:$md2 + px) {
+			top: 50%;
+			left: 55%;
+			width: 20%;
+			transform: translate(0, -50%);
+			text-align: left;
+		}
+
+		&._process {
+			color: $orange;
+		}
+
+		&._done {
+			color: $green;
+		}
+
+		&._coming {
+			color: $grey;
+		}
+
+	}
+
+
+}

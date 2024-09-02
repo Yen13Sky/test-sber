@@ -1,0 +1,97 @@
+.timeline-first {
+
+	&__title {
+		position: absolute;
+		width: 100%;
+		top: -125%;
+		left: -15px;
+
+		@media all and (max-width:$md2 + px) {
+			position: absolute;
+			top: 0;
+			left: 25%;
+			width: 20%;
+			text-align: right;
+
+		}
+
+		&._process {
+			color: $orange;
+		}
+
+		&._done {
+			color: $green;
+		}
+
+		&._coming {
+			color: $grey;
+		}
+
+		&._start {
+			left: 7.5px;
+
+			@media all and (max-width:$md2 + px) {
+				left: 25%;
+				top: 15px;
+			}
+		}
+
+		&._end {
+			left: -30px;
+			@media all and (max-width:$md2 + px) {
+				left: 25%;
+				top: -15px;
+
+			}
+
+		}
+	}
+
+	&__title-third {
+		position: absolute;
+		width: 100%;
+		top: 125%;
+		left: -15px;
+
+		@media all and (max-width:$md2 + px) {
+			position: absolute;
+			top: 0;
+			left: 55%;
+			width: 20%;
+			text-align: left;
+		}
+
+		&._process {
+			color: $orange;
+		}
+
+		&._done {
+			color: $green;
+		}
+
+		&._coming {
+			color: $grey;
+		}
+
+		&._start {
+			left: 7.5px;
+
+			@media all and (max-width:$md2 + px) {
+				left: 55%;
+				top: 7.5px;
+			}
+		}
+
+		&._end {
+			left: -30px;
+
+			@media all and (max-width:$md2 + px) {
+				left: 55%;
+				top: -7.5px;
+			}
+
+		}
+
+	}
+
+}

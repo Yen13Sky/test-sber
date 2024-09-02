@@ -1,0 +1,54 @@
+.timeline-btn {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	margin: 18px 0 0 0;
+
+
+	&__item {
+		color: $blue;
+		line-height: 150%;
+		padding: 5px 22px;
+		border: 1px solid $blue;
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		transition: all 0.3s ease 0s;
+
+		&:hover {
+			box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+		}
+
+		&._add {
+			margin: 0 16px 0 0;
+
+			&:hover {
+				border: 1px solid $green;
+				color: $green;
+			}
+		}
+
+		&._next {
+			margin: 0 0 0 16px;
+
+			&:hover {
+				border: 1px solid $orange;
+				color: orange;
+			}
+		}
+
+		&._prev {
+			margin: 0 16px 0 16px;
+
+			&:hover {
+				border: 1px solid $red;
+				color: red;
+			}
+		}
+	}
+
+	@media all and (max-width:$md2 + px) {
+		justify-content: space-evenly;
+	}
+
+
+}
